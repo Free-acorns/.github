@@ -14,7 +14,7 @@ Free Acorns has two primary objectives. The one is to actually house OER content
 
 The other primary objective of Free Acorns is to examine the feasibility of using GitHub to organize OER content in an organization scale (versus a personal scale).
 
-## How the use of GitHub align with OER
+## How the use of GitHub aligns with OER
 
 GitHub is not just a platform originally intended for revision control of source code based on a tool set called `git`. `git`, like its predecessors, such as `cvs`, `git` facilitates a few key actions:
 
@@ -29,9 +29,16 @@ Of course, this is just a superficial summary of the key actions of `git`. These
 
 * Clone: allows anyone who is interested to "get a copy of the OER material." This includes not only the published content, but also all the "source" material that is needed to create the published content.
 * Commit: Anyone who has cloned a specific OER repository can make local changes and create revised published content, and continue to use `git` locally to keep track of revisions.
-* Push: When local changes are completed, these changes are reflected in the repository so all new clones will have the revisions incorporated. However, this action also allows other clones to "pull" the revisions to integrate into local revisions.
+* Push: When local changes are completed, these changes are reflected in the repository, so all new clones will have the revisions incorporated. However, this action also allows other clones to "pull" the revisions to integrate into local revisions.
 * Pull: A clone that is already being revised can incorporate the "latest and greatest" revisions of the repository.
 * Fork: An author can take a repository in a different branch and make a spinoff.
 * Merge: Authors of branches can collaborate and integrate different branches back into a single branch that incorporates revisions of the branches being merged.
 
 These actions allow a community of OER authors, users, and collaborators to leverage work that has been done, contribute edits and new content, diversify, specialize, and collaborate without the need to conform. In a way, this enables the organic Darwinian approach as well as the engineering approach. Every member of an OER community can choose what to do, and yet at the same time collaborate.
+
+# FAQs
+
+* Do I have to use Markdown for my content?
+  * No. GitHub can work with any type of file. However, text files (such as HTML, Markdown, $\LaTeX$) allows change tracking, and as a result, revision control.
+* I am new to Markdown, are there editor that makes it easier to work with Markdown documents?
+  * Yes. There free and paid editors that make Markdown editing easier. 
