@@ -26,3 +26,12 @@ GitHub is not just a platform originally intended for revision control of source
 * Join: to merge two branches into one, integrating the revisions.
 
 Of course, this is just a superficial summary of the key actions of `git`. These actions are important to a self-sustaining community of OER participants:
+
+* Clone: allows anyone who is interested to "get a copy of the OER material." This includes not only the published content, but also all the "source" material that is needed to create the published content.
+* Commit: Anyone who has cloned a specific OER repository can make local changes and create revised published content, and continue to use `git` locally to keep track of revisions.
+* Push: When local changes are completed, these changes are reflected in the repository so all new clones will have the revisions incorporated. However, this action also allows other clones to "pull" the revisions to integrate into local revisions.
+* Pull: A clone that is already being revised can incorporate the "latest and greatest" revisions of the repository.
+* Fork: An author can take a repository in a different branch and make a spin off.
+* Merge: Authors of branches can collaborate and integrate different branches back into a single branch that incorporates revisions of the branches being merged.
+
+These actions allow a community of OER authors, users, and collaborators to leverage work that has been done, contribute edits and new content, diversify, specialize, and collaborate without the need to conform. In a way, this enables the organic Darwinian approach as well as the engineering approach. Every member of an OER community can choose what to do, and yet at the same time collaborate.
