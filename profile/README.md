@@ -36,6 +36,57 @@ Of course, this is just a superficial summary of the key actions of `git`. These
 
 These actions allow a community of OER authors, users, and collaborators to leverage work that has been done, contribute edits and new content, diversify, specialize, and collaborate without the need to conform. In a way, this enables the organic Darwinian approach as well as the engineering approach. Every member of an OER community can choose what to do, and yet at the same time collaborate.
 
+# The GitHub approach compared to [LibreTexts](https://libretexts.org)
+
+## The purpose of each platform
+
+GitHub is intended as a revision control mechanism for cloud-hosted repositories of (programming) source code files. LibreTexts, on the other hand, is intended to be a one-stop solution for OER material, including content as well as activities.
+
+Both platforms support the publication of material as well as the "remix" (in LibreTexts terms) or "fork and join" (in `git` terms) of content. 
+
+## The implied structure of each platform
+
+LibreTexts has an underlying assumption that OER content is in a "book" format. This enables LibreTexts to offer the "print as a book" feature in case prints are necessary.
+
+GitHub only has one implied structure: folders. In other words, there is no implied structure other than the folder structure that is identical to how computer users organize files in folders.
+
+## What it takes to start authoring and editing
+
+LibreTexts utilizes a web-based WYSIWYG editor that can also deep-dive into the actual HTML code. This means just about anyone can start authoring and editing content. 
+
+GitHub has a web-based editor for text files, and a preview feature to render Markdown files. GitHub does not have any built-in WYSIWYG editor. An OER author or editor needs to learn Markdown in order to create or edit content. Markdown is a fairly straightforward mark-up language, but there is a learning curve.
+
+## Support of activities
+
+LibreTexts intends to support interactive activities.
+
+GitHub as a platform does not support interactive activities. However, JavaScript embedded in HTML documents can be used for client-side interaction.
+
+## Integration into LMSes
+
+LibreTexts intends to support LMS integration.
+
+GitHub does not support LMS integration. Because resources in GitHub have URLs, an LMS can point to GitHub content as external links.
+
+# Is the GitHub approach suitable for me?
+
+It depends. As a platform, LibreTexts is a better OER platform for most OER authors and collaborators.
+
+The GitHub approach, on the other hand, is a platform worthy of consideration for OER authors and collaborations who diverge in one or more of the following ways:
+
+* A preference to choose and use their own tools to edit and otherwise process content material.
+  * Installed editors like `vi`, `vim`, and `nvim` are efficient and flexible. There are plenty of extensions to enhance the editing of text.
+  * `pandoc` is a tool that can be used to convert file formats with extensions to expand the capabilities. The use of `pandoc` can extend Markdown to express graphs, charts, etc.
+* A different way to organize OER content.
+  * *For example:*
+    * Instead of using a book-like linear organization, use a mesh-like dependency-based structure.
+    * Each individual content module is relatively short, addressing a topic that is worth no more than 2 to 3 lecture hours.
+    * Each module contains prerequisite links to other modules that cover the prerequisite knowledge, concepts, skills, definitions, etc.
+* Different ways to generate activities and assessments.
+  * *For example:*
+    * The use of subject-specific custom scripts to generate assessment questions.
+    * The use of Google App Script in conjunction with Google Doc or Google Sheet to generate practice activities.
+
 # FAQs
 
 * Do I have to use Markdown for my content?
