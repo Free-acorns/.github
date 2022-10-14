@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Tak Auyeung" />
+  <title>D-mesh for OER content organization</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="pandoc.css" />
+  <link rel="stylesheet" href="flowchart.scss" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js" type="text/javascript"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">D-mesh for OER content organization</h1>
+<p class="author">Tak Auyeung</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#what-is-a-d-mesh"><span
+class="toc-section-number">1</span> What is a D-mesh?</a></li>
+</ul>
+</nav>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.js" type="text/javascript"></script>
+<script>
+  mermaid.initialize(
+    {
+      startOnLoad: true, 
+      flowchart: 
+      {
+        htmlLabels: true,
+        useMaxWidth: false
+      },
+      securityLevel: 'loose'
+    }
+  );
+  function mirt(id, mm)
+  {
+    document.getElementById(id).innerHTML = mm
+  }
+</script>
+<h1 data-number="1" id="what-is-a-d-mesh"><span
+class="header-section-number">1</span> What is a D-mesh?</h1>
+<p>A D-mesh (Dependency mesh) is a directed graph where if an edge leads
+from node <span class="math inline">\(n1\)</span> to <span
+class="math inline">\(n2\)</span>, it means <span
+class="math inline">\(n1\)</span> depends on <span
+class="math inline">\(n2\)</span>.</p>
+<p><img
+src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAAAxCAYAAAAbQwFhAAAAAXNSR0IArs4c6QAABGFJREFUeJzt3G9oE2ccB/Dv3eXfcLYNhZJtStcypQGHcw2UzbkushaRzRe+FNZWXevWZEU6O0ZbdFpcNx0TtiFkXR0Ft4lDVxbmizHwD4w6V2tp3Gi1sxnxxbS0ScFGk8slezETfESSmLvnLrLf51249Pd77uHL07snuQipVCoFQu4SjR4AKS4UCMKgQBAGBYIwKBCEQYEgDAoEYZiyHfz953nIcWO2Kaw2EbWv2g3prdbFX8KI3Uka0ttiFeFqKHzesgbi0pkInn25vODihUomUxg/G35kA3HpTATOF+0QRUH/3qfn+AUCAFa4SiHofF5KIoXJkbC+TTW2orYUkknfiUulgMvn5lTVoGsIwqBAEAYFgjAoEIRBgSAMCgRhUCAIgwJBGDk3prRw8+Y/OHSoD2Njv2Fo6Ec4HE/q0VZzLpcLJpMJNTU18Hq9cLlc3HotLERw5MjnuHDhV0Sjt7BsWSW2bHkTa9e6ufUEdFghzp8/h46OJjgcT/FupQtZlhEIBOD1etHS0oLR0VEuffr6ujA9PYU9ez6Bz3cctbUvYP/+9zEzM82lX5qqFeLYsa8xMnIWGzduxvDwd4hEwqiocKCzczcqK6sBANFoFAcPDuD27UWcOnVSk0EbSbi7j39vMJxOJzweT94rRq55W1y8Bbu9HG1tzVi50gkA2LbNC7//ewQCY6iqeobb+alaIUwmE4LBvxAKBXH48Lc4evQnWCxWDA5+lnnP+vUbsHx5peqBFhtBECAIAmRZxsTExEOtGLnmbcmSx9HT81EmDMB//0Li8RgqKp7gdk6ABtcQiYSMpqa3IAgCJElCXd06+P3HVQ9MUZLw+Xyq6/B2/4rR3t6ON9YN5fy7h5m3WCyG/v5urF7tQl3dS5qO/36qA2G3l8NisWRem81mxGJ31JaFoigYHBhQXUcv6WAoioJ8HnXJd95mZ29g374ulJaWoafn40wfXlQHgtcAJUlCa2srl9qFGsgS0HQIRFHMa07yec/k5GXs3fsuGhs3obn5bYgi/10CXW47CyFJIrbv2GH0MBgPCkQ6CGazOXM7Oj5sU93rypU/0dvbAY/nPbjdG1TXyxf3QMzPz0FREgiH5wEA4fAcJEmC1WpDSUkp7/bcPCgI6buM8eEZVbVlWcaBA7vR2Pg6Vq1ag9nZG5ljNttjWLq0RFX9bLgHoqurDdev/515vXPnVgBAfX0Durv7ebfXXLYgaGVq6g+EQkGEQkGcOPENc6yh4TXs2vWBpv3uJWR72PfL7mvY3FltyFfo/F8Esb2vSt/GOeS7U/lV7ww2vfO0IV+h++HTa2j9sLrgGkV7DVGMeO1KFhP6cIswKBCEQYEgDAoEYVAgCIMCQRgUCMKgQBBGzo2pq6MLeoyDkUw++r+UePXigiFPf6uVNRDPu+2Q4wm9xpIhAniuvkz3vlpZ80oZ4jEFUAzo7Vb3EwpZP8sg/z90DUEYFAjCoEAQBgWCMCgQhEGBIAwKBGH8C7ZJcsj+guqGAAAAAElFTkSuQmCC"
+alt="" /></p>
+</body>
+</html>
